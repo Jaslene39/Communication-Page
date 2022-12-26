@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/FriendList"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FriendListFragment">
+
+    <TextView
+        android:id="@+id/FriendListtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="35dp"
+        android:text="Friend List"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ChatFL" />
+
+    <ImageView
+        android:id="@+id/EvelynprofileCHAT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/profilepanda"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FriendListtxt" />
+
+    <ImageView
+        android:id="@+id/Joprofile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/profilepanda"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EvelynprofileCHAT" />
+
+    <ImageView
+        android:id="@+id/Ongprofile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/profilepanda"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Joprofile" />
+
+    <ImageView
+        android:id="@+id/Abbyprofile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/profilepanda"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Ongprofile" />
+
+    <ImageView
+        android:id="@+id/Tisaprofile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/profilepanda"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Abbyprofile" />
+
+    <TextView
+        android:id="@+id/Evelyn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:text="Evelyn"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/EvelynprofileCHAT"
+        tools:layout_editor_absoluteY="188dp" />
+
+    <TextView
+        android:id="@+id/Jo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="80dp"
+        android:text="Jo"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/Joprofile"
+        app:layout_constraintTop_toBottomOf="@+id/Evelyn" />
+
+    <TextView
+        android:id="@+id/Ong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="80dp"
+        android:text="Ong"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/Ongprofile"
+        app:layout_constraintTop_toBottomOf="@+id/Jo" />
+
+    <TextView
+        android:id="@+id/Abby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="80dp"
+        android:text="Abby"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/Abbyprofile"
+        app:layout_constraintTop_toBottomOf="@+id/Ong" />
+
+    <TextView
+        android:id="@+id/Tisa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="80dp"
+        android:text="Tisa"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/Tisaprofile"
+        app:layout_constraintTop_toBottomOf="@+id/Abby" />
+
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="93dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
+        android:background="#D9D9D9"
+        android:backgroundTint="#D9D9D9"
+        android:text="BACK"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Tisaprofile" />
+
+    <ImageView
+        android:id="@+id/EvelynMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:src="@drawable/messageicon"
+        app:layout_constraintStart_toEndOf="@+id/Evelyn"
+        tools:layout_editor_absoluteY="186dp" />
+
+    <ImageView
+        android:id="@+id/JoMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="72dp"
+        android:src="@drawable/messageicon"
+        app:layout_constraintStart_toEndOf="@+id/Jo"
+        app:layout_constraintTop_toBottomOf="@+id/EvelynMessage" />
+
+    <ImageView
+        android:id="@+id/OngMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="72dp"
+        android:src="@drawable/messageicon"
+        app:layout_constraintStart_toEndOf="@+id/Ong"
+        app:layout_constraintTop_toBottomOf="@+id/JoMessage" />
+
+    <ImageView
+        android:id="@+id/AbbyMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="72dp"
+        android:src="@drawable/messageicon"
+        app:layout_constraintStart_toEndOf="@+id/Abby"
+        app:layout_constraintTop_toBottomOf="@+id/OngMessage" />
+
+    <ImageView
+        android:id="@+id/TisaMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="72dp"
+        android:src="@drawable/messageicon"
+        app:layout_constraintStart_toEndOf="@+id/Tisa"
+        app:layout_constraintTop_toBottomOf="@+id/AbbyMessage" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/ChatFL"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:background="#3D5A80"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ChatFLToolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="6dp"
+        android:text="Chat"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/FLListicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/listicon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/FLBellicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:src="@drawable/bellicon"
+        app:layout_constraintEnd_toEndOf="@+id/ChatFL"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/FLCardView"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/FriendListtxt" />
+</androidx.constraintlayout.widget.ConstraintLayout>

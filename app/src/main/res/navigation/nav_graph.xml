@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/DestContactPartner">
+
+    <fragment
+        android:id="@+id/DestContactPartner"
+        android:name="com.example.communicationpagemad_ass.ContactPartnerFragment"
+        android:label="fragment_contact_partner"
+        tools:layout="@layout/fragment_contact_partner" >
+        <action
+            android:id="@+id/action_DestContactPartner_to_DestAddFriend"
+            app:destination="@id/DestAddFriend" />
+    </fragment>
+    <fragment
+        android:id="@+id/DestAddFriend"
+        android:name="com.example.communicationpagemad_ass.AddFriendFragment"
+        android:label="fragment_add_friend"
+        tools:layout="@layout/fragment_add_friend" />
+    <fragment
+        android:id="@+id/DestFriendList"
+        android:name="com.example.communicationpagemad_ass.FriendListFragment"
+        android:label="fragment_friend_list"
+        tools:layout="@layout/fragment_friend_list" />
+    <fragment
+        android:id="@+id/DestEvelynChat"
+        android:name="com.example.communicationpagemad_ass.EvelynChatFragment"
+        android:label="fragment_evelyn_chat"
+        tools:layout="@layout/fragment_evelyn_chat" />
+    <fragment
+        android:id="@+id/DestJoanneChat"
+        android:name="com.example.communicationpagemad_ass.JoanneChatFragment"
+        android:label="fragment_joanne_chat"
+        tools:layout="@layout/fragment_joanne_chat" />
+    <fragment
+        android:id="@+id/DestChatNoti"
+        android:name="com.example.communicationpagemad_ass.ChatNotificationFragment"
+        android:label="fragment_chat_notification"
+        tools:layout="@layout/fragment_chat_notification" />
+    <fragment
+        android:id="@+id/DestAlvanChat"
+        android:name="com.example.communicationpagemad_ass.AlvanChatFragment"
+        android:label="fragment_alvan_chat"
+        tools:layout="@layout/fragment_alvan_chat" />
+</navigation>

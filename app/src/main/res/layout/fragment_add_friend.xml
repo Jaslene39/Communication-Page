@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/AddFriend"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddFriendFragment">
+
+    <ImageView
+        android:id="@+id/ContactPartnerimg"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/contactpartner2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AddFriendToolbar" />
+
+    <ImageView
+        android:id="@+id/AddFriendimg"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/addfriend2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AddFriendToolbar" />
+
+    <TextView
+        android:id="@+id/friendlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:text="Friend List"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ContactPartnerimg" />
+
+    <ImageView
+        android:id="@+id/pandaprofile1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/profilepanda"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/friendlist" />
+
+    <TextView
+        android:id="@+id/Alvan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="60dp"
+        android:text="Alvan"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/pandaprofile1"
+        app:layout_constraintTop_toBottomOf="@+id/ContactPartnerimg" />
+
+    <ImageView
+        android:id="@+id/plusicon1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="196dp"
+        android:layout_marginTop="76dp"
+        android:src="@drawable/plusicon"
+        app:layout_constraintStart_toEndOf="@+id/Alvan"
+        app:layout_constraintTop_toBottomOf="@+id/AddFriend" />
+
+    <ImageView
+        android:id="@+id/pandaprofile2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/profilepanda"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pandaprofile1" />
+
+    <TextView
+        android:id="@+id/Nano"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="62dp"
+        android:text="Nano"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/pandaprofile2"
+        app:layout_constraintTop_toBottomOf="@+id/Alvan" />
+
+    <ImageView
+        android:id="@+id/plusicon2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="196dp"
+        android:layout_marginTop="68dp"
+        android:src="@drawable/plusicon"
+        app:layout_constraintStart_toEndOf="@+id/Nano"
+        app:layout_constraintTop_toBottomOf="@+id/plusicon1" />
+
+    <TextView
+        android:id="@+id/Boba"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="62dp"
+        android:text="Boba"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/pandaprofile3"
+        app:layout_constraintTop_toBottomOf="@+id/Nano" />
+
+    <ImageView
+        android:id="@+id/plusicon3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="196dp"
+        android:layout_marginTop="68dp"
+        android:src="@drawable/plusicon"
+        app:layout_constraintStart_toEndOf="@+id/Boba"
+        app:layout_constraintTop_toBottomOf="@+id/plusicon2" />
+
+    <ImageView
+        android:id="@+id/pandaprofile4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/profilepanda"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pandaprofile3" />
+
+    <TextView
+        android:id="@+id/Coco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="62dp"
+        android:text="Coco"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/pandaprofile4"
+        app:layout_constraintTop_toBottomOf="@+id/Boba" />
+
+    <ImageView
+        android:id="@+id/plusicon4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="196dp"
+        android:layout_marginTop="68dp"
+        android:src="@drawable/plusicon"
+        app:layout_constraintStart_toEndOf="@+id/Coco"
+        app:layout_constraintTop_toBottomOf="@+id/plusicon3" />
+
+    <TextView
+        android:id="@+id/Rain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="62dp"
+        android:text="Rain"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/pandaprofile5"
+        app:layout_constraintTop_toBottomOf="@+id/Coco" />
+
+    <ImageView
+        android:id="@+id/plusicon5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="64dp"
+        android:src="@drawable/plusicon"
+        app:layout_constraintStart_toEndOf="@+id/Rain"
+        app:layout_constraintTop_toBottomOf="@+id/plusicon4" />
+
+    <TextView
+        android:id="@+id/Pika"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="62dp"
+        android:text="Pika"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/pandaprofile6"
+        app:layout_constraintTop_toBottomOf="@+id/Rain" />
+
+    <ImageView
+        android:id="@+id/plusicon6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="68dp"
+        android:src="@drawable/plusicon"
+        app:layout_constraintStart_toEndOf="@+id/Pika"
+        app:layout_constraintTop_toBottomOf="@+id/plusicon5" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="650dp" />
+
+    <ImageView
+        android:id="@+id/Homeaddfriend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/homeicon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+    <ImageView
+        android:id="@+id/Manageaddfriend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/manageicon"
+        app:layout_constraintStart_toEndOf="@+id/Homeaddfriend"
+        app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+    <ImageView
+        android:id="@+id/Chataddfriend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/chaticon"
+        app:layout_constraintStart_toEndOf="@+id/Manageaddfriend"
+        app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+    <ImageView
+        android:id="@+id/Profileaddfriend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/profileicon"
+        app:layout_constraintStart_toEndOf="@+id/Chataddfriend"
+        app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+    <ImageView
+        android:id="@+id/pandaprofile3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/profilepanda"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pandaprofile2" />
+
+    <ImageView
+        android:id="@+id/pandaprofile5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/profilepanda"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pandaprofile4" />
+
+    <ImageView
+        android:id="@+id/pandaprofile6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/profilepanda"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pandaprofile5" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/AddFriendToolbar"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:background="#3D5A80"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ChatAF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="6dp"
+        android:text="Chat"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/AddFriendToolbar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/AFListicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/listicon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/AFBellicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:src="@drawable/bellicon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

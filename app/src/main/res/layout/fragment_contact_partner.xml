@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ContactPartner"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactPartnerFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/CPCardView"
+        android:layout_width="173dp"
+        android:layout_height="4dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CPToolbar" >
+
+        <ImageView
+            android:id="@+id/contactpartner"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/contactpartner"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/CPToolbar" />
+
+    </androidx.cardview.widget.CardView >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/AFCardView"
+        android:layout_width="173dp"
+        android:layout_height="4dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CPToolbar" >
+
+            <ImageView
+                android:id="@+id/addfriend"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/addfriend"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/CPToolbar" />
+
+    </androidx.cardview.widget.CardView >
+
+    <TextView
+        android:id="@+id/todaypartner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Today's Partners"
+        android:textColor="#000000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contactpartner" />
+
+    <ImageView
+        android:id="@+id/rectangle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/rectangle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/todaypartner" />
+
+    <ImageView
+        android:id="@+id/catprofile1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/profilecat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/rectangle" />
+
+    <TextView
+        android:id="@+id/John_driver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="20dp"
+        android:text="John"
+        app:layout_constraintStart_toEndOf="@+id/catprofile1"
+        app:layout_constraintTop_toTopOf="@+id/rectangle" />
+
+    <TextView
+        android:id="@+id/Driver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="12dp"
+        android:text="Driver"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/catprofile1"
+        app:layout_constraintTop_toBottomOf="@+id/John_driver" />
+
+    <ImageView
+        android:id="@+id/rec_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:src="@drawable/rectangle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle" />
+
+    <ImageView
+        android:id="@+id/catprofile2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/profilecat"
+        app:layout_constraintBottom_toBottomOf="@+id/rec_2"
+        app:layout_constraintStart_toStartOf="@+id/rec_2"
+        app:layout_constraintTop_toTopOf="@+id/rec_2" />
+
+    <TextView
+        android:id="@+id/Joanne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="16dp"
+        android:text="Joanne"
+        app:layout_constraintStart_toEndOf="@+id/catprofile2"
+        app:layout_constraintTop_toTopOf="@+id/rec_2" />
+
+    <TextView
+        android:id="@+id/Passenger1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="12dp"
+        android:text="Passenger"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/catprofile2"
+        app:layout_constraintTop_toBottomOf="@+id/Joanne" />
+
+    <ImageView
+        android:id="@+id/rec_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:src="@drawable/rectangle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rec_2" />
+
+    <ImageView
+        android:id="@+id/catprofile3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/profilecat"
+        app:layout_constraintStart_toStartOf="@+id/rec_3"
+        app:layout_constraintTop_toTopOf="@+id/rec_3" />
+
+    <TextView
+        android:id="@+id/Emily"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="24dp"
+        android:text="Emily"
+        app:layout_constraintStart_toEndOf="@+id/catprofile3"
+        app:layout_constraintTop_toTopOf="@+id/rec_3" />
+
+    <TextView
+        android:id="@+id/Passenger3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="8dp"
+        android:text="Passenger"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/catprofile3"
+        app:layout_constraintTop_toBottomOf="@+id/Emily" />
+
+    <ImageView
+        android:id="@+id/rec_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:src="@drawable/rectangle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rec_3" />
+
+    <ImageView
+        android:id="@+id/catprofile4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/profilecat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/rec_4" />
+
+    <TextView
+        android:id="@+id/Ahmad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="16dp"
+        android:text="Ahmad"
+        app:layout_constraintStart_toEndOf="@+id/catprofile4"
+        app:layout_constraintTop_toTopOf="@+id/rec_4" />
+
+    <TextView
+        android:id="@+id/Passenger4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="8dp"
+        android:text="Passenger"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/catprofile4"
+        app:layout_constraintTop_toBottomOf="@+id/Ahmad" />
+
+    <ImageView
+        android:id="@+id/rec_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:src="@drawable/rectangle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rec_4" />
+
+    <ImageView
+        android:id="@+id/catprofile5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/profilecat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rec_4" />
+
+    <TextView
+        android:id="@+id/Lee"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="16dp"
+        android:text="Lee"
+        app:layout_constraintStart_toEndOf="@+id/catprofile5"
+        app:layout_constraintTop_toBottomOf="@+id/rec_4" />
+
+    <TextView
+        android:id="@+id/Passenger5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="12dp"
+        android:text="Passenger"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/catprofile5"
+        app:layout_constraintTop_toBottomOf="@+id/Lee" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rec_5" />
+
+    <ImageView
+        android:id="@+id/Homecp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/homeicon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <ImageView
+        android:id="@+id/Managecp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/manageicon"
+        app:layout_constraintStart_toEndOf="@+id/Homecp"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <ImageView
+        android:id="@+id/Chatcp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/chaticon"
+        app:layout_constraintStart_toEndOf="@+id/Managecp"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <ImageView
+        android:id="@+id/Profilecp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/profileicon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/Chatcp"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/CPToolbar"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:background="#3D5A80"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ChatCP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="6dp"
+        android:text="Chat"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/CPToolbar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/CPListicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/listicon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/CPBellicon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:src="@drawable/bellicon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
